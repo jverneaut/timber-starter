@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<h1>Hello, Twig!</h1>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<h2 class="text-primary">Articles</h2>
+				{% for article in articles %}
+					<h3>{{ article.title }}</h2>
+					{{ article.preview }}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}
