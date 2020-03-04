@@ -3,9 +3,6 @@
 use Timber\Timber;
 
 $context = Timber::context();
-
-// Articles are available by default under the `posts` variable.
-// This is a proof of concept query.
-$context['articles'] = Timber::get_posts('post_type = article');
+$context['post'] = new TimberPost();
 
 Timber::render('index.twig', $context);
