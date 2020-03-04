@@ -2,6 +2,8 @@
 
 This theme is a minimal WordPress & Timber theme with Gutenberg support.
 
+It NEEDS Advanced Custom Fields.
+
 > **WARNING:** I made this project to suit my needs, yours may differ. Use with caution. Put otherwise, **don't use this projet unless you are me** or you have the exact same needs as me.
 
 ### Usage
