@@ -34,7 +34,9 @@ class Theme extends Site
     $main_menu = new Menu('main-menu');
     $context['main_menu'] = $main_menu;
 
-    $context['options'] = get_fields('option');
+    if (function_exists('get_fields')) {
+      $context['options'] = get_fields('option');
+    }
 
     return $context;
   }
