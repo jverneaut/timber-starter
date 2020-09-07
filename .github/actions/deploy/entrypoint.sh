@@ -14,6 +14,4 @@ ssh-add "$HOME/.ssh/deploy_key"
 
 ssh-keyscan -t rsa 167.172.161.59 >> "$HOME/.ssh/known_hosts"
 
-echo "TEST"
 rsync --progress --verbose --recursive --delete-after --quiet -e 'ssh -o StrictHostKeyChecking=no' /github/workspace/build/ $DISTANT_THEME_LOCATION
-echo "TEST 2"
