@@ -20,12 +20,7 @@ npm run start
 ## Deployment
 
 This project use GitHub actions to deploy the theme to a distant server.
-
-The location of this server needs to be set as `DISTANT_THEME_LOCATION` in the repo secrets, ex:
-
-```sh
-DISTANT_THEME_LOCATION=<user>@<ip_address>:/var/www/html/wp-content/themes/<theme>
-```
+You need to replace CHANGE_HOST_HERE and CHANGE_PATH_HERE with server host and directory of theme respectively.
 
 The ssh key needed to access the server also needs to be set as `SSH_KEY` in the repo secrets, ex:
 
